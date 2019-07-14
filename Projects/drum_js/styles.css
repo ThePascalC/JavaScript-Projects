@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+body {
+  font-family: "Orbitron", sans-serif;
+}
+.app {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+header h1 {
+  margin: 50px 0px 30px 0px;
+  text-align: center;
+  font-size: 40px;
+}
+header p {
+  font-size: 20px;
+}
+
+.pads {
+  background: #87919e;
+  width: 100%;
+  display: flex;
+  bottom: 0;
+  position: fixed;
+}
+.pads > div {
+  height: 100px;
+  width: 100px;
+  flex: 1;
+  cursor: pointer;
+}
+.pad1 {
+  background: #55ffaa;
+}
+.pad2 {
+  background: #00e0d1;
+}
+.pad3 {
+  background: #5500aa;
+}
+.pad4 {
+  background: #f54489;
+}
+.pad5 {
+  background: #ffaa00;
+}
+.pad6 {
+  background: #ffff4c;
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0%;
+    left: 0%;
+  }
+  25% {
+    bottom: 33%;
+    left: 0%;
+  }
+  50% {
+    bottom: 66%;
+    left: 33%%;
+  }
+  100% {
+    bottom: 0%;
+    left: 80%;
+  }
+}
+.visual > div {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  bottom: 0;
+  opacity: 0.5;
+}
